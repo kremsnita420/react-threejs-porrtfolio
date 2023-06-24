@@ -1,38 +1,9 @@
-import { Tilt } from 'react-tilt';
-import { motion } from 'framer-motion';
-
 import { styles } from '../styles';
 import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
-
-function ServiceCard({ index, title, icon }) {
-	return (
-		<Tilt className='xs:w-[250px] w-full'>
-			<motion.div
-				variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
-				className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'>
-				<div
-					options={{
-						max: 45,
-						scale: 1,
-						speed: 450,
-					}}
-					className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'>
-					<img
-						src={icon}
-						alt='web-development'
-						className='w-16 h-16 object-contain'
-					/>
-
-					<h3 className='text-white text-[20px] font-bold text-center'>
-						{title}
-					</h3>
-				</div>
-			</motion.div>
-		</Tilt>
-	);
-}
+import ServiceCard from './ServiceCard';
+import { motion } from 'framer-motion';
 
 const About = () => {
 	return (
@@ -52,7 +23,7 @@ const About = () => {
 				life!
 			</motion.p>
 
-			<div className='mt-20 flex flex-wrap gap-10'>
+			<div className='mt-20 grid gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-cols-1'>
 				{services.map((service, index) => (
 					<ServiceCard key={service.title} index={index} {...service} />
 				))}
