@@ -16,19 +16,11 @@ const Contact = () => {
 	});
 	const [loading, setLoading] = useState(false);
 
-	const EMAILJS_SERVICE_ID =
-		import.meta.env.MODE === 'development'
-			? import.meta.env.VITE_APP_EMAILJS_SERVICE_ID
-			: '';
-	const EMAILJS_TEMPLATE_ID =
-		import.meta.env.MODE === 'development'
-			? import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID
-			: '';
+	const EMAILJS_SERVICE_ID = import.meta.env.VITE_APP_EMAILJS_SERVICE_ID;
 
-	const EMAILJS_PUBLIC_KEY =
-		import.meta.env.MODE === 'development'
-			? import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-			: '';
+	const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID;
+
+	const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY;
 
 	const handleChange = (e) => {
 		const { target } = e;
