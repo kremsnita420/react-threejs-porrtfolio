@@ -31,7 +31,7 @@ const Navbar = () => {
 			} w-full flex items-center py-5 fixed top-0 z-20 ${
 				scrolled ? 'bg-primary' : 'bg-transparent'
 			}`}>
-			<div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
+			<div className='flex items-center justify-between w-full mx-auto max-w-7xl'>
 				<Link
 					to='/'
 					className='flex items-center gap-2'
@@ -39,12 +39,12 @@ const Navbar = () => {
 						setActive('');
 						window.scrollTo(0, 0);
 					}}>
-					<img src={logo} alt='Logo' className='w-9 h-9 flex object-contain' />
+					<img src={logo} alt='Logo' className='flex object-contain w-9 h-9' />
 					<p className='text-white text-[18px] font-bold cursor-pointer flex'>
-						Safet&nbsp;<span className='sm:block hidden'>|&nbsp;Duranovic</span>
+						Safet&nbsp;<span className='hidden sm:block'>|&nbsp;Duranovic</span>
 					</p>
 				</Link>
-				<ul className='list-none hidden sm:flex flex-row gap-10'>
+				<ul className='flex-row hidden gap-10 list-none sm:flex'>
 					{navLinks.map((link) => (
 						<li
 							key={link.id}
@@ -57,7 +57,7 @@ const Navbar = () => {
 					))}
 				</ul>
 
-				<div className='sm:hidden flex flex-1 justify-end items-center'>
+				<div className='flex items-center justify-end flex-1 sm:hidden'>
 					<img
 						src={toggle ? close : menu}
 						alt='Menu'
@@ -68,7 +68,7 @@ const Navbar = () => {
 						className={`${
 							!toggle ? 'hidden' : 'flex'
 						} p-6 black-gradient absolute top-[55px] right-[2.5%] my-2 w-[95%] h-[89vh] min-h-[500px] z-10 rounded-xl`}>
-						<ul className='list-none  flex justify-center items-center m-auto flex-col gap-4'>
+						<ul className='flex flex-col items-center justify-center gap-4 m-auto list-none'>
 							{navLinks.map((link) => (
 								<li
 									key={link.id}

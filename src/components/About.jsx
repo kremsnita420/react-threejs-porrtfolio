@@ -23,7 +23,7 @@ const About = () => {
 				life!
 			</motion.p>
 
-			<div className='mt-20 grid gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-cols-1'>
+			<div className='grid grid-cols-1 gap-10 mt-20 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
 				{services.map((service, index) => (
 					<ServiceCard key={service.title} index={index} {...service} />
 				))}

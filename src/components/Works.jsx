@@ -12,9 +12,9 @@ const Works = () => {
 		<>
 			<motion.div variants={textVariant()}>
 				<p className={styles.sectionSubText}>My work</p>
-				<h2 className={styles.sectionHeadText}>Projects</h2>
+				<h2 className={styles.sectionHeadText}>Projects.</h2>
 			</motion.div>
-			<div className='w-full flex'>
+			<div className='flex w-full'>
 				<motion.p
 					variants={fadeIn('', '', 0.1, 1)}
 					className='mt-2 text-secondary text-[17px] max-w-3xl leading-[1.8]'>
@@ -25,7 +25,7 @@ const Works = () => {
 					and manage projects effectively.
 				</motion.p>
 			</div>
-			<div className='mt-20 grid gap-10 md:grid-cols-2 lg:grid-cols-3 grid-cols-1'>
+			<div className='grid grid-cols-1 gap-10 mt-20 md:grid-cols-2 lg:grid-cols-3'>
 				{projects.map((project, index) => (
 					<ProjectCard key={`project-${index}`} index={index} {...project} />
 				))}
