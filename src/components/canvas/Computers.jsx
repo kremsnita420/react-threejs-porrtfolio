@@ -8,15 +8,8 @@ import CanvasLoader from '../Loader';
 
 const Computers = ({ isMobile }) => {
 	const computer = useGLTF('./desktop_pc/scene.gltf');
-	// Set up state for the hovered and active state
-	const [active, setActive] = useState(false);
-	const [hovered, setHover] = useState(false);
 	return (
-		<mesh
-			scale={active ? 1.5 : 1}
-			onClick={() => setActive(!active)}
-			onPointerOver={() => setHover(true)}
-			onPointerOut={() => setHover(false)}>
+		<mesh>
 			<hemisphereLight intensity={0.15} groundColor='black' />
 			<pointLight intensity={1} />
 			<spotLight
@@ -33,7 +26,6 @@ const Computers = ({ isMobile }) => {
 				position={isMobile ? [0, -2.7, 0] : [0, -3, 0]}
 				rotation={[-0.01, 1, -0.1]}
 			/>
-			<meshStandardMaterial color={hovered ? 'hotpink' : 'orange'} />
 		</mesh>
 	);
 };
