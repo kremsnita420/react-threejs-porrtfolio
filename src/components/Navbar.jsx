@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { styles } from '../styles';
 import { navLinks } from '../constants';
-import { logo, menu, close } from '../assets';
+import { logo, menu, close, linkedin, github } from '../assets';
 
 const Navbar = () => {
 	const [active, setActive] = useState('');
@@ -85,6 +85,26 @@ const Navbar = () => {
 						</ul>
 					</div>
 				</div>
+			</div>
+			<div
+				onClick={() =>
+					window.open('https://www.linkedin.com/in/safet-duranovic/', '_blank')
+				}
+				className='flex items-center justify-center w-10 h-10 bg-blue-700 rounded-full cursor-pointer'>
+				<img
+					src={linkedin}
+					alt='source code'
+					className='object-contain w-1/2 h-1/2'
+				/>
+			</div>
+			<div
+				onClick={() => window.open('https://github.com/kremsnita420', '_blank')}
+				className='flex items-center justify-center w-10 h-10 ml-4 rounded-full cursor-pointer black-gradient'>
+				<img
+					src={github}
+					alt='source code'
+					className='object-contain w-1/2 h-1/2'
+				/>
 			</div>
 		</nav>
 	);

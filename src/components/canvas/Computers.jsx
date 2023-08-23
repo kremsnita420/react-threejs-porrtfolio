@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react/no-unknown-property */
 import { Suspense, useEffect, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
@@ -7,8 +8,15 @@ import CanvasLoader from '../Loader';
 
 const Computers = ({ isMobile }) => {
 	const computer = useGLTF('./desktop_pc/scene.gltf');
+	// Set up state for the hovered and active state
+	const [active, setActive] = useState(false);
+	const [hovered, setHover] = useState(false);
 	return (
-		<mesh>
+		<mesh
+			scale={active ? 1.5 : 1}
+			onClick={() => setActive(!active)}
+			onPointerOver={() => setHover(true)}
+			onPointerOut={() => setHover(false)}>
 			<hemisphereLight intensity={0.15} groundColor='black' />
 			<pointLight intensity={1} />
 			<spotLight
@@ -21,10 +29,11 @@ const Computers = ({ isMobile }) => {
 			/>
 			<primitive
 				object={computer.scene}
-				scale={isMobile ? 0.7 : 0.75}
-				position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
-				rotation={[-0.01, -0.2, -0.1]}
+				scale={isMobile ? 1.2 : 1.6}
+				position={isMobile ? [0, -2.7, 0] : [0, -3, 0]}
+				rotation={[-0.01, 1, -0.1]}
 			/>
+			<meshStandardMaterial color={hovered ? 'hotpink' : 'orange'} />
 		</mesh>
 	);
 };
@@ -34,7 +43,7 @@ const ComputersCanvas = () => {
 
 	useEffect(() => {
 		// Add a listener for changes to the screen size
-		const mediaQuery = window.matchMedia('(max-width: 500px)');
+		const mediaQuery = window.matchMedia('(max-width: 767px)');
 
 		// Set the initial value of the `isMobile` state variable
 		setIsMobile(mediaQuery.matches);

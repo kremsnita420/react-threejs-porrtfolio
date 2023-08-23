@@ -1,27 +1,21 @@
 import {
     mobile,
-    backend,
     creator,
     web,
     javascript,
-    typescript,
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
     mongodb,
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
+    agiledrop,
+    handyNotes,
+    quizMania,
+    restaurant,
     threejs,
 } from "../assets";
 
@@ -46,12 +40,8 @@ const services = [
         icon: web,
     },
     {
-        title: "React Native Developer",
+        title: "React Developer",
         icon: mobile,
-    },
-    {
-        title: "Backend Developer",
-        icon: backend,
     },
     {
         title: "Content Creator",
@@ -73,16 +63,8 @@ const technologies = [
         icon: javascript,
     },
     {
-        name: "TypeScript",
-        icon: typescript,
-    },
-    {
         name: "React JS",
         icon: reactjs,
-    },
-    {
-        name: "Redux Toolkit",
-        icon: redux,
     },
     {
         name: "Tailwind CSS",
@@ -116,91 +98,27 @@ const technologies = [
 
 const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        title: "Frontend Developer",
+        company_name: "Agiledrop developer agency",
+        icon: agiledrop,
         iconBg: "#383E56",
-        date: "March 2020 - April 2021",
+        date: "April 2022 - July 2023",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
             "Participating in code reviews and providing constructive feedback to other developers.",
         ],
-    },
-    {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
+    }
 ];
 
-const testimonials = [
-    {
-        testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-        name: "Sara Lee",
-        designation: "CFO",
-        company: "Acme Co",
-        image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-        testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Rick does.",
-        name: "Chris Brown",
-        designation: "COO",
-        company: "DEF Corp",
-        image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-        testimonial:
-            "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
-        designation: "CTO",
-        company: "456 Enterprises",
-        image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-];
+
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "Handy Notes",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "Site made with React.js library for creating notes. You can login with social account or create new account with email and create, save or edit notes. For easier searching notes can be filtered by tags. For backend is used Clerk authentication, Mongo Db, NodeJS and Express",
         tags: [
             {
                 name: "react",
@@ -214,52 +132,62 @@ const projects = [
                 name: "tailwind",
                 color: "pink-text-gradient",
             },
+            {
+                name: "clerk-auth",
+                color: "blue-text-gradient",
+            },
         ],
-        image: carrent,
-        source_code_link: "https://github.com/",
+        image: handyNotes,
+        live_site_link: 'https://react-notes-client.vercel.app/',
+        source_code_link: "https://github.com/kremsnita420/react-notes-client/",
     },
     {
-        name: "Job IT",
+        name: "Quiz mania",
         description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+            "Quiz app where you can select category, difficulty and number of questions. Questions data are then fetched from Open Trivia DB API endpoint. Quiz is timed based on a number of questions selected(30 seconds per question). Quiz progress is visible on a progress bar. Statistic is displayed at the end of quiz.",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "restapi",
+                name: "Open Trivia DB API",
                 color: "green-text-gradient",
             },
             {
-                name: "scss",
+                name: "tailwind",
                 color: "pink-text-gradient",
-            },
+            }
+
         ],
-        image: jobit,
-        source_code_link: "https://github.com/",
+        image: quizMania,
+        live_site_link: 'https://open-trivia-react-quiz.vercel.app/',
+        source_code_link: "https://github.com/kremsnita420/open-trivia-react-quiz",
     },
     {
-        name: "Trip Guide",
+        name: "Restaurant website",
         description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+            "Restaurant website made with Next.js framework and it's translated in two languages with next-intl library. For backend is used Sanity headless CMS for managing food and drinks menu. It's fully responsive and SEO friendly.",
         tags: [
             {
-                name: "nextjs",
+                name: "next.js",
                 color: "blue-text-gradient",
             },
             {
-                name: "supabase",
+                name: "sanity-cms",
                 color: "green-text-gradient",
             },
             {
-                name: "css",
+                name: "next-intl",
                 color: "pink-text-gradient",
-            },
+            }
+
         ],
-        image: tripguide,
-        source_code_link: "https://github.com/",
+        image: restaurant,
+        live_site_link: 'https://nextjs-restaurant-blond.vercel.app/',
+        source_code_link: "https://vercel.com/kremsnita420/nextjs-restaurant",
     },
+
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };

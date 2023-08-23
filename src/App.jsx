@@ -9,13 +9,14 @@ import {
 	Works,
 	StarsCanvas,
 } from './components';
+import Footer from './components/Footer';
 
 const App = () => {
 	return (
 		<div>
 			<BrowserRouter>
 				<div className='relative z-0 bg-primary'>
-					<div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
+					<div className='bg-center bg-no-repeat bg-cover bg-hero-pattern'>
 						<Navbar />
 						<Hero />
 					</div>
@@ -28,6 +29,7 @@ const App = () => {
 						<Contact />
 						<StarsCanvas />
 					</div>
+					<Footer />
 				</div>
 			</BrowserRouter>
 		</div>

@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx}"],
   mode: "jit",
   theme: {
+    fontFamily: {
+      'display': ['Nabla', 'cursive']
+    },
     extend: {
       colors: {
         primary: "#050816",
@@ -21,6 +24,15 @@ module.exports = {
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
       },
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        }
+      },
+      animation: {
+        wiggle: 'wiggle 1s ease-in-out infinite',
+      }
     },
   },
   plugins: [],

@@ -7,7 +7,7 @@ import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 
-const Contact = () => {
+function Contact() {
 	const formRef = useRef();
 	const [form, setForm] = useState({
 		name: '',
@@ -81,38 +81,54 @@ const Contact = () => {
 					onSubmit={handleSubmit}
 					className='flex flex-col gap-8 mt-12'>
 					<label className='flex flex-col'>
-						<span className='mb-4 font-medium text-white'>Your Name</span>
+						<span className='flex mb-4 font-medium text-white'>
+							<span className='mr-2 text-2xl md:text-4xl font-display'>*</span>
+							Your Name
+						</span>
 						<input
 							type='text'
 							name='name'
 							value={form.name}
+							required
 							onChange={handleChange}
-							placeholder="What's your good name?"
+							placeholder="What's your name?"
 							className='px-6 py-4 font-medium text-white border-none rounded-lg outline-none bg-tertiary placeholder:text-secondary'
 						/>
 					</label>
 					<label className='flex flex-col'>
-						<span className='mb-4 font-medium text-white'>Your email</span>
+						<span className='flex mb-4 font-medium text-white'>
+							<span className='mr-2 text-2xl md:text-4xl font-display'>*</span>
+							Your email
+						</span>
 						<input
 							type='email'
 							name='email'
 							value={form.email}
+							required
 							onChange={handleChange}
-							placeholder="What's your web address?"
+							placeholder='Your email address?'
 							className='px-6 py-4 font-medium text-white border-none rounded-lg outline-none bg-tertiary placeholder:text-secondary'
 						/>
 					</label>
 					<label className='flex flex-col'>
-						<span className='mb-4 font-medium text-white'>Your Message</span>
+						<span className='flex mb-4 font-medium text-white'>
+							<span className='mr-2 text-2xl md:text-4xl font-display'>*</span>
+							Your Message
+						</span>
 						<textarea
 							rows={7}
 							name='message'
 							value={form.message}
+							required
 							onChange={handleChange}
 							placeholder='What you want to say?'
 							className='px-6 py-4 font-medium text-white border-none rounded-lg outline-none bg-tertiary placeholder:text-secondary'
 						/>
 					</label>
+					<p className='flex'>
+						<span className='mr-2 text-2xl md:text-4xl font-display'>*</span>
+						Required fields
+					</p>
 					<button
 						type='submit'
 						className='px-8 py-3 font-bold text-white transition-transform shadow-md outline-none bg-tertiary w-fit shadow-primary rounded-xl hover:scale-95'>
@@ -127,6 +143,6 @@ const Contact = () => {
 			</motion.div>
 		</div>
 	);
-};
+}
 
 export default SectionWrapper(Contact, 'contact');

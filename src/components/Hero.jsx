@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
-
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
+const name = "Hi, I'm Safet";
 
 const Hero = () => {
 	return (
@@ -13,12 +13,23 @@ const Hero = () => {
 					<div className='w-1 h-40 sm:h-80 violet-gradient'></div>
 				</div>
 				<div>
-					<h1 className={`${styles.heroHeadText}`}>
-						Hi, I&apos;m <span className='text-[#915eff]'>Safet</span>
+					<h1 className={`${styles.heroHeadText} mb-4 flex`}>
+						{' '}
+						{name.split(' ').map((n, i) => (
+							<span
+								key={`letter-${i}`}
+								className={`block pr-4 animate-wiggle font-display`}>
+								{n}
+							</span>
+						))}
 					</h1>
 					<p className={`${styles.heroSubText}`}>
-						I develop 3D visuals, user <br className='hidden sm:block' />
-						user interfaces and web applications.
+						Frontend developer with passion <br className='hidden sm:block' />
+						for building amazing websites,
+						<br className='hidden sm:block' /> and learning new technologies
+						<span className='text-4xl md:text-7xl leading-[0] md:leading-[0] font-display'>
+							.
+						</span>
 					</p>
 				</div>
 			</div>
