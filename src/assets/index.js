@@ -1,3 +1,4 @@
+// Logos and icons
 import logo from "./logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
@@ -19,12 +20,12 @@ import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
-import restaurant from "./restaurant-website.png"
-
+// Companies
 import agiledrop from "./company/agiledrop.svg";
-
-import handyNotes from "./handy-notes-react.png";
-import quizMania from "./quiz-app.png";
+// Projects
+import restaurant from "./project/restaurant-website.png"
+import handyNotes from "./project/handy-notes-react.png";
+import quizMania from "./project/quiz-app.png";
 
 
 export {

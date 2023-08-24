@@ -12,7 +12,7 @@ const Footer = () => {
 				{name.split('').map((n, i) => (
 					<span
 						key={`letter-${i}`}
-						className={`block px-1 text-2xl md:text-4xl animate-wiggle font-display`}>
+						className={`block px-1 text-2xl md:text-4xl font-display`}>
 						{n}
 					</span>
 				))}

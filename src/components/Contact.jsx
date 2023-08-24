@@ -81,7 +81,7 @@ function Contact() {
 					onSubmit={handleSubmit}
 					className='flex flex-col gap-8 mt-12'>
 					<label className='flex flex-col'>
-						<span className='flex mb-4 font-medium text-white'>
+						<span className='flex font-medium text-white'>
 							<span className='mr-2 text-2xl md:text-4xl font-display'>*</span>
 							Your Name
 						</span>
@@ -96,7 +96,7 @@ function Contact() {
 						/>
 					</label>
 					<label className='flex flex-col'>
-						<span className='flex mb-4 font-medium text-white'>
+						<span className='flex font-medium text-white'>
 							<span className='mr-2 text-2xl md:text-4xl font-display'>*</span>
 							Your email
 						</span>
@@ -111,7 +111,7 @@ function Contact() {
 						/>
 					</label>
 					<label className='flex flex-col'>
-						<span className='flex mb-4 font-medium text-white'>
+						<span className='flex font-medium text-white'>
 							<span className='mr-2 text-2xl md:text-4xl font-display'>*</span>
 							Your Message
 						</span>

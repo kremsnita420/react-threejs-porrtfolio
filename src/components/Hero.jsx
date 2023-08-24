@@ -16,9 +16,7 @@ const Hero = () => {
 					<h1 className={`${styles.heroHeadText} mb-4 flex`}>
 						{' '}
 						{name.split(' ').map((n, i) => (
-							<span
-								key={`letter-${i}`}
-								className={`block pr-4 animate-wiggle font-display`}>
+							<span key={`letter-${i}`} className={`block pr-4 font-display`}>
 								{n}
 							</span>
 						))}
