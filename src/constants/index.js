@@ -17,6 +17,7 @@ import {
     quizMania,
     restaurant,
     threejs,
+    codeSnippets,
 } from "../assets";
 
 export const navLinks = [
@@ -119,6 +120,32 @@ const experiences = [
 
 
 const projects = [
+    {
+        name: "Code snippets",
+        description:
+            "Site made with Next.js 13 framework for creating code snippets. You can login with social account, save, edit and search snippets of code. For backend is used next-auth authentication and Mongo Db",
+        tags: [
+            {
+                name: "next.js",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "mongodb",
+                color: "green-text-gradient",
+            },
+            {
+                name: "tailwind",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "next-auth",
+                color: "blue-text-gradient",
+            },
+        ],
+        image: codeSnippets,
+        live_site_link: 'https://code-snippet-repository.vercel.app/',
+        source_code_link: "https://github.com/kremsnita420/code-snippet-repository/",
+    },
     {
         name: "Handy Notes",
         description:

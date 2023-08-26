@@ -43,10 +43,10 @@ const Navbar = () => {
 					}}>
 					<img src={logo} alt='Logo' className='flex object-contain w-9 h-9' />
 					<p className='text-white text-[18px] font-bold cursor-pointer flex'>
-						Safet&nbsp;<span className='hidden sm:block'>|&nbsp;Duranovic</span>
+						Safet&nbsp;<span className='hidden lg:block'>|&nbsp;Duranovic</span>
 					</p>
 				</Link>
-				<ul className='flex-row hidden gap-10 list-none sm:flex'>
+				<ul className='flex-row hidden gap-10 list-none lg:flex'>
 					{navLinks.map((link) => (
 						<li
 							key={link.id}
@@ -59,7 +59,7 @@ const Navbar = () => {
 					))}
 				</ul>
 
-				<div className='flex items-center justify-end flex-1 sm:hidden'>
+				<div className='flex items-center justify-end flex-1 lg:hidden'>
 					<img
 						src={toggle ? close : menu}
 						alt='Menu'
@@ -75,8 +75,8 @@ const Navbar = () => {
 								<li
 									key={link.id}
 									className={`${
-										active === link.title ? 'text-white' : 'text-secondary'
-									} font-poppins font-medium cursor-pointer text-[20px]`}
+										active === link.title ? 'text-white ' : 'text-secondary'
+									} font-poppins hover:text-white transition-colors  font-medium cursor-pointer text-[20px]`}
 									onClick={() => {
 										setToggle(!toggle);
 										setActive(link.title);
@@ -84,14 +84,14 @@ const Navbar = () => {
 									<a href={`#${link.id}`}>{link.id}</a>
 								</li>
 							))}
-							<div className='mt-6'>
+							<div className='mt-10'>
 								<Social linkedin={linkedin} github={github} pdf={pdf} />
 							</div>
 						</ul>
 					</div>
 				</div>
 			</div>
-			<div className='hidden md:block'>
+			<div className='hidden ml-10 lg:block'>
 				<Social linkedin={linkedin} github={github} pdf={pdf} />
 			</div>
 		</nav>

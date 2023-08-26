@@ -26,6 +26,7 @@ import agiledrop from "./company/agiledrop.svg";
 import restaurant from "./project/restaurant-website.png"
 import handyNotes from "./project/handy-notes-react.png";
 import quizMania from "./project/quiz-app.png";
+import codeSnippets from "./project/code-snippets.png";
 
 
 export {
@@ -53,5 +54,6 @@ export {
   agiledrop,
   handyNotes,
   quizMania,
-  restaurant
+  restaurant,
+  codeSnippets
 };
