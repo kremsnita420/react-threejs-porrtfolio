@@ -11,13 +11,18 @@ import {
     mongodb,
     git,
     figma,
-    docker,
+    // docker,
     agiledrop,
     handyNotes,
     quizMania,
     restaurant,
     threejs,
     codeSnippets,
+    webpack,
+    nextjs,
+    sass,
+    stylelint,
+    eslint,
 } from "../assets";
 
 export const navLinks = [
@@ -54,51 +59,70 @@ const services = [
     },
 ];
 
-const technologies = [
-    {
-        name: "HTML 5",
-        icon: html,
-    },
-    {
-        name: "CSS 3",
-        icon: css,
-    },
-    {
-        name: "JavaScript",
-        icon: javascript,
-    },
-    {
-        name: "React JS",
-        icon: reactjs,
-    },
-    {
-        name: "Tailwind CSS",
-        icon: tailwind,
-    },
-    {
-        name: "Node JS",
-        icon: nodejs,
-    },
-    {
-        name: "MongoDB",
-        icon: mongodb,
-    },
-    {
-        name: "Three JS",
-        icon: threejs,
-    },
-    {
-        name: "git",
-        icon: git,
-    },
-    {
-        name: "figma",
-        icon: figma,
-    },
-    {
-        name: "docker",
-        icon: docker,
-    },
+const technologies = [{
+    name: "HTML 5",
+    icon: html,
+},
+{
+    name: "CSS 3",
+    icon: css,
+},
+{
+    name: "Sass",
+    icon: sass,
+},
+{
+    name: "JavaScript",
+    icon: javascript,
+},
+{
+    name: "React JS",
+    icon: reactjs,
+},
+{
+    name: "Next JS",
+    icon: nextjs,
+},
+{
+    name: "Tailwind CSS",
+    icon: tailwind,
+},
+{
+    name: "Stylelint",
+    icon: stylelint,
+},
+{
+    name: "eslint",
+    icon: eslint,
+},
+{
+    name: "Node JS",
+    icon: nodejs,
+},
+{
+    name: "Webpack",
+    icon: webpack,
+},
+{
+    name: "MongoDB",
+    icon: mongodb,
+},
+{
+    name: "Three JS",
+    icon: threejs,
+},
+{
+    name: "git",
+    icon: git,
+},
+{
+    name: "figma",
+    icon: figma,
+},
+    // {
+    //     name: "docker",
+    //     icon: docker,
+    // },
 ];
 
 const experiences = [

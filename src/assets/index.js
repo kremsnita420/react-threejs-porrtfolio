@@ -10,7 +10,7 @@ import close from "./close.svg";
 import linkedin from './linkedin.svg'
 import pdf from './pdf-icon.png'
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
+// import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
@@ -20,6 +20,11 @@ import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
+import webpack from "./tech/webpack.svg";
+import nextjs from "./tech/nextjs.svg";
+import sass from "./tech/sass.svg";
+import stylelint from "./tech/stylelint.svg";
+import eslint from "./tech/eslint.svg";
 // Companies
 import agiledrop from "./company/agiledrop.svg";
 // Projects
@@ -32,8 +37,13 @@ import codeSnippets from "./project/code-snippets.png";
 export {
   logo,
   backend,
+  webpack,
+  nextjs,
+  sass,
   creator,
   mobile,
+  stylelint,
+  eslint,
   linkedin,
   web,
   pdf,
@@ -41,7 +51,7 @@ export {
   menu,
   close,
   css,
-  docker,
+  // docker,
   figma,
   git,
   html,
