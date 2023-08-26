@@ -88,14 +88,6 @@ const technologies = [{
     icon: tailwind,
 },
 {
-    name: "Stylelint",
-    icon: stylelint,
-},
-{
-    name: "eslint",
-    icon: eslint,
-},
-{
     name: "Node JS",
     icon: nodejs,
 },
