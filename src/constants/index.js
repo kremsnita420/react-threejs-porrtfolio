@@ -79,26 +79,26 @@ const technologies = [{
     name: "React JS",
     icon: reactjs,
 },
-    // {
-    //     name: "Next JS",
-    //     icon: nextjs,
-    // },
-    // {
-    //     name: "Tailwind CSS",
-    //     icon: tailwind,
-    // },
-    // {
-    //     name: "Node JS",
-    //     icon: nodejs,
-    // },
-    // {
-    //     name: "Webpack",
-    //     icon: webpack,
-    // },
-    // {
-    //     name: "MongoDB",
-    //     icon: mongodb,
-    // },
+{
+    name: "Next JS",
+    icon: nextjs,
+},
+{
+    name: "Tailwind CSS",
+    icon: tailwind,
+},
+// {
+//     name: "Node JS",
+//     icon: nodejs,
+// },
+// {
+//     name: "Webpack",
+//     icon: webpack,
+// },
+{
+    name: "MongoDB",
+    icon: mongodb,
+},
     // {
     //     name: "Three JS",
     //     icon: threejs,
