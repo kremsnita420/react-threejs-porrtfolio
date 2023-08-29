@@ -29,23 +29,11 @@ const Tech = () => {
 				variants={zoomIn()}
 				className='flex flex-wrap justify-center py-2 md:py-7'>
 				{techList.map((tech) => (
-					<motion.li
-						initial={{
-							opacity: 0,
-							y: 50,
-						}}
-						whileInView={{
-							opacity: 1,
-							y: 0,
-							transition: {
-								duration: 1,
-								delay: 0.6,
-							},
-						}}
+					<li
 						className={`${styles.techText} ml-4 mb-4 rounded-md px-4 border`}
 						key={tech}>
 						{tech}
-					</motion.li>
+					</li>
 				))}
 			</motion.ul>
 		</>
