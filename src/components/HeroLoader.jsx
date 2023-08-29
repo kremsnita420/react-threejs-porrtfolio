@@ -11,6 +11,7 @@ const HeroLoader = () => {
 				justifyContent: 'center',
 				alignItems: 'center',
 				flexDirection: 'column',
+				transform: 'translateY(100%)',
 			}}>
 			<span className='canvas-loader'></span>
 			<p
