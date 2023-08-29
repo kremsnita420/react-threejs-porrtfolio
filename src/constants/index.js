@@ -1,6 +1,6 @@
 import {
     mobile,
-    creator,
+    developer,
     web,
     javascript,
     html,
@@ -46,16 +46,16 @@ export const navLinks = [
 
 const services = [
     {
-        title: "Web Developer",
+        title: "Frontend Developer",
         icon: web,
     },
     {
-        title: "React Developer",
+        title: "Javascript Developer",
         icon: mobile,
     },
     {
-        title: "Content Creator",
-        icon: creator,
+        title: "Javascript developer",
+        icon: developer,
     },
 ];
 
@@ -68,10 +68,6 @@ const technologies = [{
     icon: css,
 },
 {
-    name: "Sass",
-    icon: sass,
-},
-{
     name: "JavaScript",
     icon: javascript,
 },
@@ -80,25 +76,29 @@ const technologies = [{
     icon: reactjs,
 },
 {
-    name: "Next JS",
-    icon: nextjs,
-},
-{
-    name: "Tailwind CSS",
-    icon: tailwind,
-},
-// {
-//     name: "Node JS",
-//     icon: nodejs,
-// },
-// {
-//     name: "Webpack",
-//     icon: webpack,
-// },
-{
     name: "MongoDB",
     icon: mongodb,
 },
+    // {
+    //     name: "Sass",
+    //     icon: sass,
+    // },
+    // {
+    //     name: "Next JS",
+    //     icon: nextjs,
+    // },
+    // {
+    //     name: "Tailwind CSS",
+    //     icon: tailwind,
+    // },
+    // {
+    //     name: "Node JS",
+    //     icon: nodejs,
+    // },
+    // {
+    //     name: "Webpack",
+    //     icon: webpack,
+    // },
     // {
     //     name: "Three JS",
     //     icon: threejs,

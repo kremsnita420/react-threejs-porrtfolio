@@ -1,14 +1,14 @@
 // Logos and icons
 import logo from "./logo.svg";
 import backend from "./backend.png";
-import creator from "./creator.png";
+import developer from "./developer.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-import linkedin from './linkedin.svg'
-import pdf from './pdf-icon.png'
+import linkedin from './linkedin.svg';
+import pdf from './pdf-icon.png';
 import css from "./tech/css.png";
 // import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -28,7 +28,7 @@ import eslint from "./tech/eslint.svg";
 // Companies
 import agiledrop from "./company/agiledrop.svg";
 // Projects
-import restaurant from "./project/restaurant-website.png"
+import restaurant from "./project/restaurant-website.png";
 import handyNotes from "./project/handy-notes-react.png";
 import quizMania from "./project/quiz-app.png";
 import codeSnippets from "./project/code-snippets.png";
@@ -40,7 +40,7 @@ export {
   webpack,
   nextjs,
   sass,
-  creator,
+  developer,
   mobile,
   stylelint,
   eslint,
