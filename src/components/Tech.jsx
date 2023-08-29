@@ -15,7 +15,7 @@ const Tech = () => {
 			</motion.div>
 			<motion.div
 				variants={fadeIn()}
-				className='flex flex-row flex-wrap justify-center gap-10 my-2 md:my-7'>
+				className='flex flex-row flex-wrap justify-center gap-10 my-7'>
 				{technologies.map((technology) => (
 					<div
 						className='w-28 h-28'
@@ -27,7 +27,7 @@ const Tech = () => {
 
 			<motion.ul
 				variants={zoomIn()}
-				className='flex flex-wrap justify-center py-2 md:py-7'>
+				className='flex flex-wrap justify-center py-4 md:py-7'>
 				{techList.map((tech) => (
 					<li
 						className={`${styles.techText} ml-4 mb-4 rounded-md px-4 border`}

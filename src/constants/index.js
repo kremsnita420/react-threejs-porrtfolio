@@ -7,7 +7,7 @@ import {
     css,
     reactjs,
     sass,
-    nextjs,
+    // nextjs,
     agiledrop,
     handyNotes,
     quizMania,
@@ -83,10 +83,10 @@ const technologies = [{
     name: "React JS",
     icon: reactjs,
 },
-{
-    name: "Next JS",
-    icon: nextjs,
-},
+    // {
+    //     name: "Next JS",
+    //     icon: nextjs,
+    // },
     // {
     //     name: "MongoDB",
     //     icon: mongodb,
