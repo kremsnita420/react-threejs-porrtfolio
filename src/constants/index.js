@@ -158,7 +158,7 @@ const projects = [
     {
         name: "Restaurant website",
         description:
-            "Restaurant website made with Next.js framework and it's translated in two languages with next-intl library. For backend is used Sanity headless CMS for managing food and drinks menu. It's fully responsive and SEO friendly.",
+            "Restaurant website made with Next.js framework and it's translated in two languages with next-intl library. For backend is used Sanity headless CMS to manage food and drinks menus. It's fully responsive and SEO friendly.",
         tags: [
             {
                 name: "next.js",
