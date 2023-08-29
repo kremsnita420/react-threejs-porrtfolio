@@ -125,12 +125,20 @@ const techList = [
     "React JS",
     "Next JS",
     "MongoDB",
-    "Tailwind CSS",
     "Node JS",
+    "Tailwind CSS",
+    "Material UI",
     "Webpack",
     "Three JS",
-    "git",
-    "figma",
+    "Git",
+    "Github",
+    "Npm",
+    "Responsive design",
+    "Figma",
+    "a11y",
+    "i18n",
+    "OAuth"
+
 ];
 
 const experiences = [

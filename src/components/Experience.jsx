@@ -9,23 +9,15 @@ import { experiences } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { textVariant } from '../utils/motion';
 import ExperienceCard from './ExperienceCard';
-
+// 👇️ import the pdf document
+import PdfResume from '/Safet_Duranovic_-_Frontend_Web_Developer.pdf';
 const Experience = () => {
+	console.log(PdfResume);
 	return (
 		<>
 			<motion.div variants={textVariant()}>
 				<p className={styles.sectionSubText}>Where I have worked so far</p>
 				<h2 className={styles.sectionHeadText}>Work experience.</h2>
-				<button
-					onClick={() =>
-						window.open(
-							'https://drive.google.com/file/d/1adz-Zj-V_qFf7-wcD45sWJqFxm0QU4st/view?usp=sharing',
-							'_blank'
-						)
-					}
-					className='flex items-center justify-center px-4 py-2 mt-4 text-lg transition-transform border rounded-xl cursor-pointer hover:translate-y-[2px] hover:translate-x-[2px] md:text-2xl'>
-					Download Resume
-				</button>
 			</motion.div>
 
 			<div className='flex flex-col mt-20'>
@@ -37,6 +29,12 @@ const Experience = () => {
 						/>
 					))}
 				</VerticalTimeline>
+				<a
+					href={PdfResume}
+					download='Example-PDF-document'
+					className='flex items-center w-fit justify-center px-4 py-2 mt-8 mx-auto text-lg transition-transform border rounded-xl cursor-pointer hover:translate-y-[2px] hover:translate-x-[2px] md:text-2xl'>
+					Download Resume
+				</a>
 			</div>
 		</>
 	);

@@ -5,7 +5,7 @@ const name = "Hi, I'm Safet";
 
 const Hero = () => {
 	return (
-		<section className='relative w-full h-[100dvh] mx-auto'>
+		<header className='relative w-full h-[100dvh] mx-auto hero_section'>
 			<div
 				className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
 				<div className='flex flex-col items-center justify-center mt-5'>
@@ -51,7 +51,7 @@ const Hero = () => {
 					</div>
 				</a>
 			</div>
-		</section>
+		</header>
 	);
 };
 

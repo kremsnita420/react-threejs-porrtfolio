@@ -41,7 +41,11 @@ const Navbar = () => {
 						setActive('');
 						window.scrollTo(0, 0);
 					}}>
-					<img src={logo} alt='Logo' className='flex object-contain w-9 h-9' />
+					<img
+						src={logo}
+						alt='Logo'
+						className='flex object-contain w-9 h-9'
+					/>
 					<p className='text-white text-[18px] font-bold cursor-pointer flex'>
 						Safet&nbsp;<span className='hidden lg:block'>|&nbsp;Duranovic</span>
 					</p>
@@ -52,7 +56,7 @@ const Navbar = () => {
 							key={link.id}
 							className={`${
 								active === link.title ? 'text-white' : 'text-secondary'
-							} hover:text-white transition-colors origin-center text-[20px] font-medium cursor-pointer`}
+							} hover:text-white transition-colors origin-center text-2xl font-medium cursor-pointer`}
 							onClick={() => setActive(link.title)}>
 							<a href={`#${link.id}`}>{link.id}</a>
 						</li>
@@ -76,7 +80,7 @@ const Navbar = () => {
 									key={link.id}
 									className={`${
 										active === link.title ? 'text-white ' : 'text-secondary'
-									} font-poppins hover:text-white transition-colors  font-medium cursor-pointer text-[20px]`}
+									} font-poppins hover:text-white transition-colors mb-4 font-medium cursor-pointer text-2xl`}
 									onClick={() => {
 										setToggle(!toggle);
 										setActive(link.title);
@@ -85,14 +89,22 @@ const Navbar = () => {
 								</li>
 							))}
 							<div className='mt-10'>
-								<Social linkedin={linkedin} github={github} pdf={pdf} />
+								<Social
+									linkedin={linkedin}
+									github={github}
+									pdf={pdf}
+								/>
 							</div>
 						</ul>
 					</div>
 				</div>
 			</div>
 			<div className='hidden ml-10 lg:block'>
-				<Social linkedin={linkedin} github={github} pdf={pdf} />
+				<Social
+					linkedin={linkedin}
+					github={github}
+					pdf={pdf}
+				/>
 			</div>
 		</nav>
 	);

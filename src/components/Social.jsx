@@ -1,13 +1,14 @@
 import React from 'react';
 
-const Social = ({ pdf, linkedin, github }) => {
+// eslint-disable-next-line react/prop-types
+const Social = ({ linkedin, github }) => {
 	return (
 		<div className='flex'>
 			<div
 				onClick={() =>
 					window.open('https://www.linkedin.com/in/safet-duranovic/', '_blank')
 				}
-				className='flex items-center justify-center w-10 h-10 bg-blue-700 rounded-full cursor-pointer'>
+				className='flex items-center justify-center w-10 h-10 transition-transform bg-blue-700 border rounded-full cursor-pointer hover:scale-95'>
 				<img
 					src={linkedin}
 					title='Linkedin'
@@ -17,7 +18,7 @@ const Social = ({ pdf, linkedin, github }) => {
 			</div>
 			<div
 				onClick={() => window.open('https://github.com/kremsnita420', '_blank')}
-				className='flex items-center justify-center w-10 h-10 ml-4 rounded-full cursor-pointer black-gradient'>
+				className='flex items-center justify-center w-10 h-10 ml-4 transition-transform border rounded-full cursor-pointer hover:scale-95 black-gradient'>
 				<img
 					src={github}
 					title='Github'
