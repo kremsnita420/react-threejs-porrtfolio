@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 
 const ExperienceCard = ({ experience }) => {
@@ -32,7 +33,7 @@ const ExperienceCard = ({ experience }) => {
 				{experience.points.map((point, index) => (
 					<li
 						key={`experience-point-${index}`}
-						className='text-white-100 text-[14px] pl-1 tracking-wider'>
+						className='pl-1 mb-4 text-sm tracking-wider white-100 md:text-[1rem]'>
 						{point}
 					</li>
 				))}
