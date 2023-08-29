@@ -12,7 +12,6 @@ import ExperienceCard from './ExperienceCard';
 // 👇️ import the pdf document
 import PdfResume from '/Safet_Duranovic_-_Frontend_Web_Developer.pdf';
 const Experience = () => {
-	console.log(PdfResume);
 	return (
 		<>
 			<motion.div variants={textVariant()}>
