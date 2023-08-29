@@ -6,23 +6,23 @@ import {
     html,
     css,
     reactjs,
-    tailwind,
-    nodejs,
-    mongodb,
-    git,
-    figma,
-    // docker,
+    sass,
+    nextjs,
     agiledrop,
     handyNotes,
     quizMania,
     restaurant,
-    threejs,
     codeSnippets,
-    webpack,
-    nextjs,
-    sass,
-    stylelint,
-    eslint,
+    // nodejs,
+    // tailwind,
+    // threejs,
+    // webpack,
+    // docker,
+    // git,
+    // mongodb,
+    // figma,
+    // stylelint,
+    // eslint,
 } from "../assets";
 
 export const navLinks = [
@@ -33,6 +33,10 @@ export const navLinks = [
     {
         id: "work",
         title: "Work",
+    },
+    {
+        id: "tech",
+        title: "Tech",
     },
     {
         id: "projects",
@@ -50,7 +54,7 @@ const services = [
         icon: web,
     },
     {
-        title: "Javascript Developer",
+        title: "React Developer",
         icon: mobile,
     },
     {
@@ -68,6 +72,10 @@ const technologies = [{
     icon: css,
 },
 {
+    name: "Sass",
+    icon: sass,
+},
+{
     name: "JavaScript",
     icon: javascript,
 },
@@ -76,16 +84,12 @@ const technologies = [{
     icon: reactjs,
 },
 {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "Next JS",
+    icon: nextjs,
 },
     // {
-    //     name: "Sass",
-    //     icon: sass,
-    // },
-    // {
-    //     name: "Next JS",
-    //     icon: nextjs,
+    //     name: "MongoDB",
+    //     icon: mongodb,
     // },
     // {
     //     name: "Tailwind CSS",
@@ -113,6 +117,22 @@ const technologies = [{
     // } 
 ];
 
+const techList = [
+    "HTML 5",
+    "CSS 3",
+    "Sass",
+    "JavaScript",
+    "React JS",
+    "Next JS",
+    "MongoDB",
+    "Tailwind CSS",
+    "Node JS",
+    "Webpack",
+    "Three JS",
+    "git",
+    "figma",
+];
+
 const experiences = [
     {
         title: "Frontend Developer",
@@ -135,6 +155,29 @@ const experiences = [
 
 
 const projects = [
+    {
+        name: "Restaurant website",
+        description:
+            "Restaurant website made with Next.js framework and it's translated in two languages with next-intl library. For backend is used Sanity headless CMS for managing food and drinks menu. It's fully responsive and SEO friendly.",
+        tags: [
+            {
+                name: "next.js",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "sanity-cms",
+                color: "green-text-gradient",
+            },
+            {
+                name: "next-intl",
+                color: "pink-text-gradient",
+            }
+
+        ],
+        image: restaurant,
+        live_site_link: 'https://nextjs-restaurant-blond.vercel.app/',
+        source_code_link: "https://vercel.com/kremsnita420/nextjs-restaurant",
+    },
     {
         name: "Code snippets",
         description:
@@ -210,30 +253,8 @@ const projects = [
         live_site_link: 'https://open-trivia-react-quiz.vercel.app/',
         source_code_link: "https://github.com/kremsnita420/open-trivia-react-quiz",
     },
-    {
-        name: "Restaurant website",
-        description:
-            "Restaurant website made with Next.js framework and it's translated in two languages with next-intl library. For backend is used Sanity headless CMS for managing food and drinks menu. It's fully responsive and SEO friendly.",
-        tags: [
-            {
-                name: "next.js",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "sanity-cms",
-                color: "green-text-gradient",
-            },
-            {
-                name: "next-intl",
-                color: "pink-text-gradient",
-            }
 
-        ],
-        image: restaurant,
-        live_site_link: 'https://nextjs-restaurant-blond.vercel.app/',
-        source_code_link: "https://vercel.com/kremsnita420/nextjs-restaurant",
-    },
 
 ];
 
-export { services, technologies, experiences, projects };
+export { services, technologies, experiences, projects, techList };

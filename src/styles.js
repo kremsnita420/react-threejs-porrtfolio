@@ -12,6 +12,9 @@ const styles = {
         "text-white font-display tracking-wider font-black md:text-[60px] sm:text-[50px] text-[40px]",
     sectionSubText:
         "sm:text-[18px] text-[14px] tracking-wider text-secondary uppercase tracking-wider mb-2",
+
+    techText:
+        "text-[#dfd9ff] font-medium tracking-wider lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]",
 };
 
 export { styles };
