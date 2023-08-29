@@ -131,7 +131,7 @@ function Contact() {
 					</p>
 					<button
 						type='submit'
-						className='flex items-center w-1/4 justify-center px-4 py-2 mt-4 text-lg transition-transform border rounded-xl cursor-pointer hover:translate-y-[2px] hover:translate-x-[2px] md:text-2xl'>
+						className='flex items-center w-fit justify-center px-4 py-2 mt-4 text-lg transition-transform border rounded-xl cursor-pointer hover:translate-y-[2px] hover:translate-x-[2px] md:text-2xl'>
 						{loading ? 'Sending...' : 'Send'}
 					</button>
 				</form>
