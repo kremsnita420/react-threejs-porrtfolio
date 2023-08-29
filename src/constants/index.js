@@ -79,42 +79,38 @@ const technologies = [{
     name: "React JS",
     icon: reactjs,
 },
-{
-    name: "Next JS",
-    icon: nextjs,
-},
-{
-    name: "Tailwind CSS",
-    icon: tailwind,
-},
-{
-    name: "Node JS",
-    icon: nodejs,
-},
-{
-    name: "Webpack",
-    icon: webpack,
-},
-{
-    name: "MongoDB",
-    icon: mongodb,
-},
-{
-    name: "Three JS",
-    icon: threejs,
-},
-{
-    name: "git",
-    icon: git,
-},
-{
-    name: "figma",
-    icon: figma,
-},
     // {
-    //     name: "docker",
-    //     icon: docker,
+    //     name: "Next JS",
+    //     icon: nextjs,
     // },
+    // {
+    //     name: "Tailwind CSS",
+    //     icon: tailwind,
+    // },
+    // {
+    //     name: "Node JS",
+    //     icon: nodejs,
+    // },
+    // {
+    //     name: "Webpack",
+    //     icon: webpack,
+    // },
+    // {
+    //     name: "MongoDB",
+    //     icon: mongodb,
+    // },
+    // {
+    //     name: "Three JS",
+    //     icon: threejs,
+    // },
+    // {
+    //     name: "git",
+    //     icon: git,
+    // },
+    // {
+    //     name: "figma",
+    //     icon: figma,
+    // } 
 ];
 
 const experiences = [
@@ -125,10 +121,13 @@ const experiences = [
         iconBg: "#383E56",
         date: "April 2022 - July 2023",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            `Collaborated with an international team of developers and designers to build responsive web applications. Developed and implemented user interface components using HTML, CSS, and avaScript.`,
+            `Developed and implemented user interface components using HTML, CSS, and JavaScript.`,
+            `Implemented responsive design techniques to ensure optimal performance across various devices and screen sizes.`,
+            `Worked closely with the backend development team to integrate frontend components with server-side logic.`,
+            `Assisted in optimizing website performance by analyzing and addressing performance bottlenecks.`,
+            `Collaborated with the UX/UI team to translate wireframes and mockups into functional web interfaces.`,
+            `Stayed updated with the latest web technologies and industry trends to suggest improvements and implement new features.`
         ],
     }
 ];
