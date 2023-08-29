@@ -3,7 +3,7 @@ import { BallCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { technologies } from '../constants';
 import { techList } from '../constants';
-import { textVariant, zoomIn, slideIn, fadeIn } from '../utils/motion';
+import { textVariant, zoomIn, fadeIn } from '../utils/motion';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
 const Tech = () => {
