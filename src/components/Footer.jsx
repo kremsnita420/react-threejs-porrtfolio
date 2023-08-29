@@ -3,7 +3,7 @@ const name = 'Safet Duranovic';
 
 const Footer = () => {
 	return (
-		<motion.footer className='flex flex-col items-center justify-center py-4 text-2xl text-center bg-primary md:mt-8'>
+		<motion.footer className='flex flex-col items-center justify-center py-4 text-xl text-center bg-primary md:mt-8'>
 			made by{' '}
 			<a
 				className='flex px-4 py-3'
@@ -33,7 +33,7 @@ const Footer = () => {
 				target='_blank'
 				rel='noreferrer'
 				href='mailto:duranovic.safet@gmail.com'
-				className={`block text-xl md:text-2xl my-4 font-base`}>
+				className={`block text-[20px] md:text-2xl my-4 font-base`}>
 				duranovic.safet@gmail.com
 			</a>
 			{new Date().getFullYear()}
