@@ -50,7 +50,6 @@ const ProjectCard = ({
 						</div>
 					</div>
 				</div>
-
 				<div className='my-5'>
 					<h3 className='text-white font-bold text-[24px]'>{name}</h3>
 					<p className='mt-2 text-secondary text-[14px]'>{description}</p>
@@ -68,4 +67,5 @@ const ProjectCard = ({
 		</motion.div>
 	);
 };
+
 export default ProjectCard;
