@@ -59,16 +59,16 @@ const App = () => {
 						<StarsCanvas />
 					</div>
 					<Footer />
+					{showTopBtn && (
+						<button
+							onClick={goToTop}
+							type='submit'
+							className='fixed bottom-4 text-black font-bold w-fit right-6 md:right-10 bg-white/60 flex items-center justify-center px-2 py-1 mt-4 text-sm transition-transform border rounded-xl cursor-pointer hover:translate-y-[2px] hover:translate-x-[2px] md:text-xl'>
+							Go to top
+						</button>
+					)}
 				</div>
 			</BrowserRouter>
-			{showTopBtn && (
-				<button
-					onClick={goToTop}
-					type='submit'
-					className='fixed bottom-4 right-6 md:right-10 flex items-center justify-center px-2 py-1 mt-4 text-sm transition-transform border rounded-xl cursor-pointer hover:translate-y-[2px] hover:translate-x-[2px] md:text-xl'>
-					Go to top
-				</button>
-			)}
 		</div>
 	);
 };

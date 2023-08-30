@@ -13,7 +13,7 @@ const Hero = () => {
 					<div className='w-1 h-40 sm:h-80 violet-gradient'></div>
 				</div>
 				<div>
-					<h1 className={`${styles.heroHeadText} mb-4 flex`}>
+					<h1 className={`${styles.heroHeadText} mb-4 mt-0 md:mt-8 uhd:mt-20 flex`}>
 						{' '}
 						{name.split(' ').map((n, i) => (
 							<span

@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
-import { slideIn, textVariant } from '../utils/motion';
+import { fadeIn, textVariant } from '../utils/motion';
 import ProjectCard from './ProjectCard';
 
 const Works = () => {
@@ -14,7 +14,7 @@ const Works = () => {
 			</motion.div>
 			<div className='flex w-full'>
 				<motion.p
-					variants={slideIn('left', 'tween', 0.2, 1)}
+					variants={fadeIn('', '', 0.1, 1)}
 					className='mt-2 text-secondary text-[17px] max-w-3xl leading-[1.8]'>
 					Following section showcases examples of my work. Each project is briefly
 					described with links to code repositories and live demos in it. It reflects

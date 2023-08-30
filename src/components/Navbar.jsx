@@ -47,10 +47,10 @@ const Navbar = () => {
 						className='flex object-contain w-9 h-9'
 					/>
 					<p className='text-white text-[18px] font-bold cursor-pointer flex'>
-						Safet&nbsp;<span className='hidden lg:block'>|&nbsp;Duranovic</span>
+						Safet&nbsp;<span className='hidden xl:block'>|&nbsp;Duranovic</span>
 					</p>
 				</Link>
-				<ul className='flex-row hidden gap-10 list-none lg:flex'>
+				<ul className='flex-row hidden gap-10 list-none xl:flex'>
 					{navLinks.map((link) => (
 						<li
 							key={link.id}
@@ -63,7 +63,7 @@ const Navbar = () => {
 					))}
 				</ul>
 
-				<div className='flex items-center justify-end flex-1 lg:hidden'>
+				<div className='flex items-center justify-end flex-1 xl:hidden'>
 					<img
 						src={toggle ? close : menu}
 						alt='Menu'
@@ -73,7 +73,7 @@ const Navbar = () => {
 					<div
 						className={`${
 							!toggle ? 'hidden' : 'flex'
-						} p-6 black-gradient absolute top-[55px] right-[2.5%] my-2 w-[95%] h-[89vh] min-h-[500px] z-10 rounded-xl`}>
+						} p-6 black-gradient absolute top-[55px] right-[2.5%] my-2 w-[95%] md:w-[60%] h-[89vh] min-h-[500px] z-10 rounded-xl`}>
 						<ul className='flex flex-col items-center justify-center gap-4 m-auto list-none'>
 							{navLinks.map((link) => (
 								<li
@@ -99,7 +99,7 @@ const Navbar = () => {
 					</div>
 				</div>
 			</div>
-			<div className='hidden ml-10 lg:block'>
+			<div className='hidden ml-10 xl:block'>
 				<Social
 					linkedin={linkedin}
 					github={github}
