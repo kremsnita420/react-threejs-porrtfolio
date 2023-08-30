@@ -1,7 +1,6 @@
 import { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
-
 import { styles } from '../styles';
 import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
@@ -17,9 +16,8 @@ function Contact() {
 	const [loading, setLoading] = useState(false);
 
 	const EMAILJS_SERVICE_ID = import.meta.env.VITE_APP_EMAILJS_SERVICE_ID;
-
 	const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID;
-
+	const EMAILJS_EMAIL = import.meta.env.VITE_APP_EMAILJS_EMAIL;
 	const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY;
 
 	const handleChange = (e) => {
@@ -44,7 +42,7 @@ function Contact() {
 					from_name: form.name,
 					to_name: 'Safet Duranovic',
 					from_email: form.email,
-					to_email: 'duranovic.safet@gmail.com',
+					to_email: EMAILJS_EMAIL,
 					message: form.message,
 				},
 				EMAILJS_PUBLIC_KEY
