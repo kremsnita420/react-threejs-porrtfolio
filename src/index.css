@@ -19,11 +19,11 @@
 	background-color: #804dee;
 }
 
-/* html,
+html,
 body,
 #root {
 	overflow-x: hidden;
-} */
+}
 
 .hash-span {
 	margin-top: -50px;
