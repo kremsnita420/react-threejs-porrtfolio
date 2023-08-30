@@ -86,6 +86,7 @@ function Contact() {
 						ref={recaptchaRef}
 						size='invisible'
 						sitekey={import.meta.env.VITE_RECAPTCHA}
+						onSubmit={handleSubmit}
 					/>
 					<label className='flex flex-col'>
 						<span className='flex font-medium text-white'>

@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "@google-cloud/recaptcha-enterprise": "^4.0.0",
     "@react-three/drei": "^9.77.1",
     "@react-three/fiber": "^8.13.3",
     "framer-motion": "^10.12.16",
