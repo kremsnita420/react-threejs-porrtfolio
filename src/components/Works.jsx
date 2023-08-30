@@ -9,7 +9,19 @@ import ProjectCard from './ProjectCard';
 const Works = ({ index }) => {
 	return (
 		<>
-			<motion.div variants={textVariant()}>
+			<motion.div
+				initial={{
+					opacity: 0,
+					y: 25,
+				}}
+				whileInView={{
+					opacity: 1,
+					y: 0,
+				}}
+				transition={{
+					duration: 1,
+					delay: 0,
+				}}>
 				<p className={styles.sectionSubText}>My work</p>
 				<h2 className={styles.sectionHeadText}>Projects.</h2>
 			</motion.div>
@@ -25,7 +37,7 @@ const Works = ({ index }) => {
 					}}
 					transition={{
 						duration: 1,
-						delay: index * 0.2,
+						delay: 0.5,
 					}}
 					className='mt-2 text-secondary text-[17px] max-w-3xl leading-[1.8]'>
 					Following section showcases examples of my work. Each project is briefly
