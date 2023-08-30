@@ -5,7 +5,7 @@ import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 // import { zoomIn } from '../utils/motion';
 const ProjectCard = ({
-	// index,
+	index,
 	name,
 	description,
 	tags,
@@ -25,7 +25,7 @@ const ProjectCard = ({
 			}}
 			transition={{
 				duration: 1,
-				delay: 1.5,
+				delay: index * 0.2,
 			}}>
 			<Tilt
 				options={{
