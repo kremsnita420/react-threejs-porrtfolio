@@ -15,7 +15,18 @@ const Works = ({ index }) => {
 			</motion.div>
 			<div className='flex w-full'>
 				<motion.p
-					variants={fadeIn('left', 'spring', index * 0.5, 0.75)}
+					initial={{
+						opacity: 0,
+						y: 25,
+					}}
+					whileInView={{
+						opacity: 1,
+						y: 0,
+					}}
+					transition={{
+						duration: 1,
+						delay: index * 0.2,
+					}}
 					className='mt-2 text-secondary text-[17px] max-w-3xl leading-[1.8]'>
 					Following section showcases examples of my work. Each project is briefly
 					described with links to code repositories and live demos in it. It reflects
