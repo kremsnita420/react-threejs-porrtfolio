@@ -26,7 +26,7 @@ const Computers = ({ isMobile }) => {
 			<primitive
 				object={computer.scene}
 				scale={isMobile ? 1.2 : 1.5}
-				position={isMobile ? [-0.9, -2.5, 0] : [0.5, -2.5, 0]}
+				position={[0, -2.7, 0]}
 				rotation={[0, 0.7, -0.1]}
 			/>
 		</mesh>
@@ -47,7 +47,6 @@ const ComputersCanvas = () => {
 		const handleMediaQueryChange = (event) => {
 			setIsMobile(event.matches);
 		};
-
 		// Add the callback function as a listener for changes to the media query
 		mediaQuery.addEventListener('change', handleMediaQueryChange);
 
