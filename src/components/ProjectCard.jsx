@@ -3,7 +3,7 @@ import { github } from '../assets';
 import { html } from '../assets/';
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
-import { slideIn } from '../utils/motion';
+import { fadeIn } from '../utils/motion';
 const ProjectCard = ({
 	index,
 	name,
@@ -14,7 +14,7 @@ const ProjectCard = ({
 	live_site_link,
 }) => {
 	return (
-		<motion.div variants={slideIn('left', 'tween', index * 0.5, 0.75)}>
+		<motion.div variants={fadeIn('left', 'tween', index * 0.5, 0.75)}>
 			<Tilt
 				options={{
 					max: 45,
@@ -50,6 +50,7 @@ const ProjectCard = ({
 						</div>
 					</div>
 				</div>
+
 				<div className='my-5'>
 					<h3 className='text-white font-bold text-[24px]'>{name}</h3>
 					<p className='mt-2 text-secondary text-[14px]'>{description}</p>
@@ -67,5 +68,4 @@ const ProjectCard = ({
 		</motion.div>
 	);
 };
-
 export default ProjectCard;
