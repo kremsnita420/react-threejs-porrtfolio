@@ -42,6 +42,7 @@ const App = () => {
 			behavior: 'smooth',
 		});
 	};
+
 	return (
 		<div>
 			<BrowserRouter>
