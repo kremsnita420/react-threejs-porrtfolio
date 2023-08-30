@@ -3,9 +3,9 @@ import { github } from '../assets';
 import { html } from '../assets/';
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
-import { zoomIn } from '../utils/motion';
+// import { zoomIn } from '../utils/motion';
 const ProjectCard = ({
-	index,
+	// index,
 	name,
 	description,
 	tags,
