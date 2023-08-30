@@ -2,11 +2,10 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
-import { fadeIn, textVariant } from '../utils/motion';
 import ProjectCard from './ProjectCard';
 
 // eslint-disable-next-line react/prop-types
-const Works = ({ index }) => {
+const Works = () => {
 	return (
 		<>
 			<motion.div
