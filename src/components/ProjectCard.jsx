@@ -14,7 +14,19 @@ const ProjectCard = ({
 	live_site_link,
 }) => {
 	return (
-		<motion.div variants={zoomIn(index * 0.5, 0.75)}>
+		<motion.div
+			initial={{
+				opacity: 0,
+				y: 25,
+			}}
+			whileInView={{
+				opacity: 1,
+				y: 0,
+			}}
+			transition={{
+				duration: 1,
+				delay: 1.5,
+			}}>
 			<Tilt
 				options={{
 					max: 45,
