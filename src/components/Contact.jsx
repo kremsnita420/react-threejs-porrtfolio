@@ -1,13 +1,15 @@
-import { useRef, useState } from 'react';
+import { createRef, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
-
 import { styles } from '../styles';
 import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 function Contact() {
+	const recaptchaRef = createRef();
+
 	const formRef = useRef();
 	const [form, setForm] = useState({
 		name: '',
@@ -32,10 +34,10 @@ function Contact() {
 		});
 	};
 
-	const handleSubmit = (e) => {
+	const handleSubmit = async (e) => {
 		e.preventDefault();
 		setLoading(true);
-
+		const token = await recaptchaRef.current.executeAsync();
 		emailjs
 			.send(
 				EMAILJS_SERVICE_ID,
@@ -80,6 +82,11 @@ function Contact() {
 					ref={formRef}
 					onSubmit={handleSubmit}
 					className='flex flex-col gap-8 mt-12'>
+					<ReCAPTCHA
+						ref={recaptchaRef}
+						size='invisible'
+						sitekey={import.meta.env.VITE_RECAPTCHA}
+					/>
 					<label className='flex flex-col'>
 						<span className='flex font-medium text-white'>
 							<span className='mr-2 text-2xl md:text-4xl font-display'>*</span>
