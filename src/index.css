@@ -19,8 +19,10 @@
 	background-color: #804dee;
 }
 
+html,
+body,
 #root {
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 .hash-span {
