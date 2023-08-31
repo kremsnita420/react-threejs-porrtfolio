@@ -7,22 +7,13 @@ import {
     css,
     reactjs,
     sass,
-    // nextjs,
     agiledrop,
     handyNotes,
     quizMania,
     restaurant,
     codeSnippets,
-    // nodejs,
-    // tailwind,
-    // threejs,
-    // webpack,
-    // docker,
-    // git,
-    // mongodb,
-    // figma,
-    // stylelint,
-    // eslint,
+    moviesDb
+
 } from "../assets";
 
 export const navLinks = [
@@ -63,58 +54,27 @@ const services = [
     },
 ];
 
-const technologies = [{
-    name: "HTML 5",
-    icon: html,
-},
-{
-    name: "CSS 3",
-    icon: css,
-},
-{
-    name: "Sass",
-    icon: sass,
-},
-{
-    name: "JavaScript",
-    icon: javascript,
-},
-{
-    name: "React JS",
-    icon: reactjs,
-},
-    // {
-    //     name: "Next JS",
-    //     icon: nextjs,
-    // },
-    // {
-    //     name: "MongoDB",
-    //     icon: mongodb,
-    // },
-    // {
-    //     name: "Tailwind CSS",
-    //     icon: tailwind,
-    // },
-    // {
-    //     name: "Node JS",
-    //     icon: nodejs,
-    // },
-    // {
-    //     name: "Webpack",
-    //     icon: webpack,
-    // },
-    // {
-    //     name: "Three JS",
-    //     icon: threejs,
-    // },
-    // {
-    //     name: "git",
-    //     icon: git,
-    // },
-    // {
-    //     name: "figma",
-    //     icon: figma,
-    // } 
+const technologies = [
+    {
+        name: "HTML 5",
+        icon: html,
+    },
+    {
+        name: "CSS 3",
+        icon: css,
+    },
+    {
+        name: "Sass",
+        icon: sass,
+    },
+    {
+        name: "JavaScript",
+        icon: javascript,
+    },
+    {
+        name: "React JS",
+        icon: reactjs,
+    }
 ];
 
 const techList = [
@@ -163,6 +123,21 @@ const experiences = [
 
 
 const projects = [
+    {
+        name: "Movies Database",
+        description:
+            "Website where you can search for movies, shows and actors. You can check movie/show's poster, cast, description, rating, trailers and related videos. On cast member page you can see their biography, location, birth and movies/shows that they appear in. All data is trough several API calls to TMDB API service ",
+        tags: [
+            {
+                name: "next.js",
+                color: "blue-text-gradient",
+            }
+
+        ],
+        image: moviesDb,
+        live_site_link: 'https://movie-db-tailwind.vercel.app/',
+        source_code_link: "https://github.com/kremsnita420/movieDB-tailwind",
+    },
     {
         name: "Restaurant website",
         description:

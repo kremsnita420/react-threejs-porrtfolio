@@ -32,6 +32,7 @@ import restaurant from "./project/restaurant-website.png";
 import handyNotes from "./project/handy-notes-react.png";
 import quizMania from "./project/quiz-app.png";
 import codeSnippets from "./project/code-snippets.png";
+import moviesDb from "./project/movies-db.png";
 
 
 export {
@@ -51,7 +52,6 @@ export {
   menu,
   close,
   css,
-  // docker,
   figma,
   git,
   html,
@@ -65,5 +65,6 @@ export {
   handyNotes,
   quizMania,
   restaurant,
-  codeSnippets
+  codeSnippets,
+  moviesDb
 };
