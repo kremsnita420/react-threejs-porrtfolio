@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { github } from '../assets';
-import { html } from '../assets/';
+import { linkIcon } from '../assets/';
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 
@@ -46,7 +46,7 @@ const ProjectCard = ({
 							onClick={() => window.open(live_site_link, '_blank')}
 							className='flex items-center justify-center w-10 h-10 mr-2 rounded-full cursor-pointer black-gradient'>
 							<img
-								src={html}
+								src={linkIcon}
 								alt='source code'
 								className='object-contain w-1/2 h-1/2'
 							/>

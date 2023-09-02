@@ -25,6 +25,7 @@ import nextjs from "./tech/nextjs.svg";
 import sass from "./tech/sass.svg";
 import stylelint from "./tech/stylelint.svg";
 import eslint from "./tech/eslint.svg";
+import linkIcon from "./link-icon.svg";
 // Companies
 import agiledrop from "./company/agiledrop.svg";
 // Projects
@@ -41,6 +42,7 @@ export {
   webpack,
   nextjs,
   sass,
+  linkIcon,
   developer,
   mobile,
   stylelint,
