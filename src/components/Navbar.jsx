@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import { AnimatePresence, motion, useCycle } from 'framer-motion';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { logo, menu, close, linkedin, github, pdf } from '../assets';
@@ -10,6 +10,28 @@ const Navbar = () => {
 	const [active, setActive] = useState('');
 	const [toggle, setToggle] = useState(false);
 	const [scrolled, setScrolled] = useState(false);
+	const [open, cycleOpen] = useCycle(false, true);
+
+	const itemVariants = {
+		closed: {
+			opacity: 0,
+		},
+		open: { opacity: 1 },
+	};
+	const sideVariants = {
+		closed: {
+			transition: {
+				staggerChildren: 0.2,
+				staggerDirection: -1,
+			},
+		},
+		open: {
+			transition: {
+				staggerChildren: 0.2,
+				staggerDirection: 1,
+			},
+		},
+	};
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -22,8 +44,12 @@ const Navbar = () => {
 		};
 
 		window.addEventListener('scroll', handleScroll);
+		window.addEventListener('load', handleScroll);
 
-		return () => window.removeEventListener('scroll', handleScroll);
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+			window.removeEventListener('load', handleScroll);
+		};
 	}, []);
 
 	return (
@@ -65,38 +91,55 @@ const Navbar = () => {
 
 				<div className='flex items-center justify-end flex-1 xl:hidden'>
 					<img
-						src={toggle ? close : menu}
+						src={open ? close : menu}
 						alt='Menu'
 						className='w-[28px] h-[28px] object-contain cursor-pointer'
-						onClick={() => setToggle(!toggle)}
+						onClick={cycleOpen}
 					/>
-					<div
-						className={`${
-							!toggle ? 'hidden' : 'flex'
-						} p-6 black-gradient absolute top-[55px] right-[2.5%] my-2 w-[95%] md:w-[60%] h-[89vh] min-h-[500px] z-10`}>
-						<ul className='flex flex-col items-center justify-center gap-4 m-auto list-none'>
-							{navLinks.map((link) => (
-								<li
-									key={link.id}
-									className={`${
-										active === link.title ? 'text-white ' : 'text-secondary'
-									} font-poppins hover:text-white transition-colors mb-4 font-medium cursor-pointer text-2xl`}
-									onClick={() => {
-										setToggle(!toggle);
-										setActive(link.title);
-									}}>
-									<a href={`#${link.id}`}>{link.id}</a>
-								</li>
-							))}
-							<div className='mt-10'>
-								<Social
-									linkedin={linkedin}
-									github={github}
-									pdf={pdf}
-								/>
-							</div>
-						</ul>
-					</div>
+					<AnimatePresence>
+						{open && (
+							<motion.aside
+								initial={{ x: 1000 }}
+								animate={{
+									x: 0,
+								}}
+								exit={{
+									x: 1000,
+									transition: { duration: 0.3 },
+								}}
+								className={`flex p-6 black-gradient absolute top-[67px] right-0 my-2 w-[100%] md:w-[60%] h-[calc(100vh-67px)] min-h-[500px] z-10`}>
+								<motion.ul
+									initial='closed'
+									animate='open'
+									exit='closed'
+									variants={sideVariants}
+									className='flex flex-col items-center justify-center gap-4 m-auto list-none'>
+									{navLinks.map((link) => (
+										<motion.li
+											whileHover={{ scale: 1.1 }}
+											variants={itemVariants}
+											key={link.id}
+											className={`${
+												active === link.title ? 'text-white ' : 'text-secondary'
+											} font-poppins hover:text-white transition-colors mb-4 font-medium cursor-pointer text-2xl`}
+											onClick={() => {
+												setToggle(!toggle);
+												setActive(link.title);
+											}}>
+											<a href={`#${link.id}`}>{link.id}</a>
+										</motion.li>
+									))}
+									<div className='mt-10'>
+										<Social
+											linkedin={linkedin}
+											github={github}
+											pdf={pdf}
+										/>
+									</div>
+								</motion.ul>
+							</motion.aside>
+						)}
+					</AnimatePresence>
 				</div>
 			</div>
 			<div className='hidden ml-10 xl:block'>

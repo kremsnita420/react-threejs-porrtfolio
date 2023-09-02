@@ -8,7 +8,7 @@ function ServiceCard({ index, title, icon }) {
 		<Tilt className='w-full'>
 			<motion.div
 				variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
-				className='w-full red-orange-gradient p-[1px] shadow-card'>
+				className='w-full blue-yellow-gradient p-[1px] shadow-card'>
 				<div
 					options={{
 						max: 45,

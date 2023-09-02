@@ -23,7 +23,7 @@ module.exports = {
         uhd: "2560px"
       },
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/herobg.png')",
+        "hero-pattern": "url('/src/assets/hero-bg.jpg')",
       },
       keyframes: {
         wiggle: {
