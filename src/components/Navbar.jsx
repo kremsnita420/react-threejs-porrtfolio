@@ -105,7 +105,7 @@ const Navbar = () => {
 								}}
 								exit={{
 									x: 1000,
-									transition: { duration: 0.3 },
+									transition: { type: 'spring', duration: 0.3 },
 								}}
 								className={`flex p-6 black-gradient absolute top-[67px] right-0 my-2 w-[100%] md:w-[60%] h-[calc(100vh-67px)] min-h-[500px] z-10`}>
 								<motion.ul
@@ -123,7 +123,7 @@ const Navbar = () => {
 												active === link.title ? 'text-white ' : 'text-secondary'
 											} font-poppins hover:text-white transition-colors mb-4 font-medium cursor-pointer text-2xl`}
 											onClick={() => {
-												setToggle(!toggle);
+												cycleOpen(false);
 												setActive(link.title);
 											}}>
 											<a href={`#${link.id}`}>{link.id}</a>
