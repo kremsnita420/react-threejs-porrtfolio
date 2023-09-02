@@ -68,10 +68,10 @@ function Contact() {
 	};
 
 	return (
-		<div className='flex flex-col-reverse gap-10 overflow-hidden xl:mt-12 xl:flex-row'>
+		<div className='flex flex-col-reverse gap-10 overflow-hidden xl:mt-12 xl:flex-row '>
 			<motion.div
 				variants={slideIn('left', 'tween', 0.2, 1)}
-				className='flex-[0.75] bg-black-100 p-5 md:p-8 rounded-2xl'>
+				className='flex-[0.75] bg-black-100 p-5 md:p-8 violet-gradient'>
 				<p className={styles.sectionSubText}>Get in touch</p>
 				<h3 className={styles.sectionHeadText}>Contact.</h3>
 				<form
@@ -90,7 +90,7 @@ function Contact() {
 							required
 							onChange={handleChange}
 							placeholder="What's your name?"
-							className='px-6 py-4 font-medium text-white border-none rounded-lg outline-none bg-tertiary placeholder:text-secondary'
+							className='px-6 py-4 font-medium text-white border-none outline-none bg-tertiary placeholder:text-secondary'
 						/>
 					</label>
 					<label className='flex flex-col'>
@@ -105,7 +105,7 @@ function Contact() {
 							required
 							onChange={handleChange}
 							placeholder='Your email address?'
-							className='px-6 py-4 font-medium text-white border-none rounded-lg outline-none bg-tertiary placeholder:text-secondary'
+							className='px-6 py-4 font-medium text-white border-none outline-none bg-tertiary placeholder:text-secondary'
 						/>
 					</label>
 					<label className='flex flex-col'>
@@ -120,7 +120,7 @@ function Contact() {
 							required
 							onChange={handleChange}
 							placeholder='What you want to say?'
-							className='px-6 py-4 font-medium text-white border-none rounded-lg outline-none bg-tertiary placeholder:text-secondary'
+							className='px-6 py-4 font-medium text-white border-none outline-none bg-tertiary placeholder:text-secondary'
 						/>
 					</label>
 					<p className='flex'>
@@ -129,7 +129,7 @@ function Contact() {
 					</p>
 					<button
 						type='submit'
-						className='flex items-center w-fit justify-center px-4 py-2 mt-4 text-lg transition-transform border rounded-xl cursor-pointer hover:translate-y-[2px] hover:translate-x-[2px] md:text-2xl'>
+						className='flex items-center w-fit justify-center px-4 py-2 mt-4 text-lg transition-transform border cursor-pointer  hover:translate-y-[-2px] md:text-2xl'>
 						{loading ? 'Sending...' : 'Send'}
 					</button>
 				</form>

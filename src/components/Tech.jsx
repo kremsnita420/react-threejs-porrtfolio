@@ -30,7 +30,7 @@ const Tech = () => {
 				className='flex flex-wrap justify-center py-4 md:py-7'>
 				{techList.map((tech) => (
 					<li
-						className={`${styles.techText} mx-2 mb-4 rounded-md px-4 border`}
+						className={`${styles.techText} mx-2 mb-4 px-4 border`}
 						key={tech}>
 						{tech}
 					</li>

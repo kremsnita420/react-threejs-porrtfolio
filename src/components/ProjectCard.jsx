@@ -33,12 +33,12 @@ const ProjectCard = ({
 					scale: 1,
 					speed: 450,
 				}}
-				className='flex flex-col w-full h-full p-5 bg-tertiary rounded-2xl'>
+				className='flex flex-col w-full h-full p-5 violet-gradient'>
 				<div className='relative w-full h-[230px]'>
 					<img
 						src={image}
 						alt='project_image'
-						className='object-cover w-full h-full rounded-2xl'
+						className='object-cover w-full h-full'
 					/>
 
 					<div className='absolute inset-0 flex justify-end m-3 card-img_hover'>

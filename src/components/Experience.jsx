@@ -31,7 +31,7 @@ const Experience = () => {
 				<a
 					href={PdfResume}
 					download='Example-PDF-document'
-					className='flex items-center w-fit justify-center px-4 py-2 mt-8 mx-auto text-lg transition-transform border rounded-xl cursor-pointer hover:translate-y-[2px] hover:translate-x-[2px] md:text-2xl'>
+					className='flex items-center w-fit justify-center px-4 py-2 mt-8 mx-auto text-lg transition-transform border cursor-pointer  hover:translate-y-[-2px] md:text-2xl'>
 					Download Resume
 				</a>
 			</div>
